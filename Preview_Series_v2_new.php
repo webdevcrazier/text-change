@@ -162,7 +162,7 @@ SECTION TO EDIT FOR THE SERIES IMAGE
                                     <circle id="Ellipse_6" data-name="Ellipse 6" cx="5.967" cy="5.967" r="5.967" transform="translate(729.756 294.808)" fill="#fff"/>
                                     <path id="Path_33" data-name="Path 33" d="M617.839,209.295a5.967,5.967,0,1,0-5.967-5.967A5.979,5.979,0,0,0,617.839,209.295Z" fill="#f26d7e" fill-rule="evenodd"/>
                                     <path id="Path_34" data-name="Path 34" d="M883.426,93.162a5.968,5.968,0,1,0-5.967-5.967A5.979,5.979,0,0,0,883.426,93.162Z" fill="#2ed5a1" fill-rule="evenodd"/>
-                                    <text id="Education" transform="translate(792 214)" fill="#fff" font-size="18" font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
+                                    <text id="Education" transform="translate(792 252)" fill="#fff" font-size="18" font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
                                         <?php
                                         $split_names = explode(" ", $category['strCategory_name']);
                                         $first_offset = -0.5 * (count($split_names) - 1);
