@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="<?php echo BASE_URL;?>/assets/components/ListingPost/ListingPost.css?version=<?php echo time();?>" />
     <link rel="stylesheet" href="<?php echo BASE_URL;?>/assets/css/yevgeny/preview_series-page-v2.css?version=<?php echo time();?>">
 
-	<?php require_once _ROOTPATH_ . '/yevgeny/views/_livestream/require_head.php'; ?>
+    <?php require_once _ROOTPATH_ . '/yevgeny/views/_livestream/require_head.php'; ?>
 
 </head>
 
@@ -162,7 +162,7 @@ SECTION TO EDIT FOR THE SERIES IMAGE
                                     <circle id="Ellipse_6" data-name="Ellipse 6" cx="5.967" cy="5.967" r="5.967" transform="translate(729.756 294.808)" fill="#fff"/>
                                     <path id="Path_33" data-name="Path 33" d="M617.839,209.295a5.967,5.967,0,1,0-5.967-5.967A5.979,5.979,0,0,0,617.839,209.295Z" fill="#f26d7e" fill-rule="evenodd"/>
                                     <path id="Path_34" data-name="Path 34" d="M883.426,93.162a5.968,5.968,0,1,0-5.967-5.967A5.979,5.979,0,0,0,883.426,93.162Z" fill="#2ed5a1" fill-rule="evenodd"/>
-                                    <text id="Education" transform="translate(792 252)" fill="#fff" font-size="18" font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
+                                    <text id="Education" transform="translate(792 214)" fill="#fff" font-size="18" font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
                                         <?php
                                         $split_names = explode(" ", $category['strCategory_name']);
                                         $first_offset = -0.5 * (count($split_names) - 1);
@@ -262,49 +262,49 @@ END OF SECTION TO EDIT FOR CREATOR IMAGE
         </header>
         <div class="page__content">
 
-					<!--
-					added by efemer
-					show list of connected live stream
-					-->
-						<section style="border-bottom: 1px solid grey;" class="explore__this">
-							<div class="section__inner">
-								<h2 class="section__header">Upcoming LiveStreams</h2>
+                    <!--
+                    added by efemer
+                    show list of connected live stream
+                    -->
+                        <section style="border-bottom: 1px solid grey;" class="explore__this">
+                            <div class="section__inner">
+                                <h2 class="section__header">Upcoming LiveStreams</h2>
 
-									<?php if (!isset($schedules) || empty($schedules)) : ?>
+                                    <?php if (!isset($schedules) || empty($schedules)) : ?>
 
-										<div class="series__description">
-										<p>No Stream Scheduled</p>
-									</div>
+                                        <div class="series__description">
+                                        <p>No Stream Scheduled</p>
+                                    </div>
 
-									<?php else : ?>
+                                    <?php else : ?>
 
-										<div class="row">
-											<div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
 
-												<ul class="list-group">
-													<?php foreach ($schedules as $schedule) : ?>
-													<li class="list-group-item">
-														<a href="/viewstream?id=<?php echo $schedule['intLiveStream_stream_ID'] ?>" style="text-align: center; cursor:pointer; color: dodgerblue; font-size: 14px; margin-bottom: 10px;">
-															<?php
-																	$schedule_datetime = new \Carbon\Carbon($schedule['dtLiveStream_datetime']);
-																	echo $schedule_datetime->format('F d, Y') . ' at ';
-																	echo $schedule_datetime->format('h:ia');
-															?>
-															<br>
-															<span style="font-size: 18px;"><?php echo $schedule['strLiveStream_title'] ?></span>
-														</a>
-													</li>
-													<?php endforeach; ?>
-												</ul>
+                                                <ul class="list-group">
+                                                    <?php foreach ($schedules as $schedule) : ?>
+                                                    <li class="list-group-item">
+                                                        <a href="/viewstream?id=<?php echo $schedule['intLiveStream_stream_ID'] ?>" style="text-align: center; cursor:pointer; color: dodgerblue; font-size: 14px; margin-bottom: 10px;">
+                                                            <?php
+                                                                    $schedule_datetime = new \Carbon\Carbon($schedule['dtLiveStream_datetime']);
+                                                                    echo $schedule_datetime->format('F d, Y') . ' at ';
+                                                                    echo $schedule_datetime->format('h:ia');
+                                                            ?>
+                                                            <br>
+                                                            <span style="font-size: 18px;"><?php echo $schedule['strLiveStream_title'] ?></span>
+                                                        </a>
+                                                    </li>
+                                                    <?php endforeach; ?>
+                                                </ul>
 
-											</div>
-										</div>
+                                            </div>
+                                        </div>
 
-									<?php endif; ?>
-							</div>
-						</section>
+                                    <?php endif; ?>
+                            </div>
+                        </section>
 
-					<!-- end upcoming live stream -->
+                    <!-- end upcoming live stream -->
 
             <section class="explore__this">
                 <div class="section__inner">
@@ -557,8 +557,8 @@ END OF SECTION TO EDIT FOR CREATOR IMAGE
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="540.329px" height="540.329px" viewBox="0 0 540.329 540.329" style="enable-background:new 0 0 540.329 540.329;" xml:space="preserve">
                                                                                     <g>
                                                                                         <g>
-                                                                                            <polygon points="0.002,540.329 58.797,532.66 7.664,481.528 		"></polygon>
-                                                                                            <polygon points="16.685,412.341 10.657,458.56 81.765,529.668 127.983,523.64 442.637,208.992 331.338,97.688 		"></polygon>
+                                                                                            <polygon points="0.002,540.329 58.797,532.66 7.664,481.528      "></polygon>
+                                                                                            <polygon points="16.685,412.341 10.657,458.56 81.765,529.668 127.983,523.64 442.637,208.992 331.338,97.688      "></polygon>
                                                                                             <path d="M451.248,5.606C447.502,1.861,442.57,0,437.57,0c-5.264,0-10.6,2.062-14.701,6.157L346.92,82.106l111.299,111.298
                                                                                                 l75.949-75.949c7.992-7.986,8.236-20.698,0.557-28.378L451.248,5.606z"></path>
                                                                                         </g>
@@ -688,23 +688,23 @@ END OF SECTION TO EDIT FOR CREATOR IMAGE
 <?php require_once _ROOTPATH_ . '/yevgeny/views/_livestream/require_js.php'; ?>
 
 <script>
-	if (alert_msg) {
-		swal({
-			icon: "info",
-			title: 'INFO!',
-			text: alert_msg,
-			buttons: {
-				returnHome: {
-					text: "OK",
-					value: 'ok',
-					visible: true,
-					className: "",
-					closeModal: true,
-				}
-			},
-			closeOnClickOutside: false,
-		});
-	}
+    if (alert_msg) {
+        swal({
+            icon: "info",
+            title: 'INFO!',
+            text: alert_msg,
+            buttons: {
+                returnHome: {
+                    text: "OK",
+                    value: 'ok',
+                    visible: true,
+                    className: "",
+                    closeModal: true,
+                }
+            },
+            closeOnClickOutside: false,
+        });
+    }
 </script>
 
 </body>
